@@ -31,13 +31,19 @@
                     <tr>
 
                        <th scope="col">Nome</th>
-                       <th scope="col">Endereço</th>
-                       <th scope="col">Telefone</th>
-                       <th scope="col">Data Nascimento</th>
                        <th scope="col">Email</th>
                        <th scope="col">Ações</th>
                     </tr>
                 </thead>
+            <tbody>
+                <?php
+                while($linha = mysqli_fetch_assoc($dados)){
+                    $id = $linha['id'];
+                    $nome = $linha['nome'];
+                    $email = $linha['email'];
+                    
+                }?>
+            </tbody>
             </div>
         </div>
     </div>
